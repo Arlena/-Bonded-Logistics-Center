@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清溪物流保税中心</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<div id="body-wrapper">
+		<div id="top">
+			<a href="/"><img src="../images/logo2.png" height="60px"></a>
+		</div>
+		<div id="body-content">
+			<div id="sidebar">
+				<div id="sidebar-wrapper">
+					<!-- Sidebar with logo and menu -->
+					<h1 id="sidebar-title">
+						<a href="#">清溪物流保税中心</a>
+					</h1>
+					<!-- Logo (221px wide) -->
+					<a href="/">
+						<!--<img alt="Xinze RRP logo" id="logo" src="../images/logo.png">-->
+					</a>
+					<!-- Sidebar Profile links -->
+					<div id="profile-links">
+						<!--	你好,
+						<a href="/me">user</a>
+						,
+						<span id="welcome_message">欢迎你</span>-->
+						<br>
+						<br>
+						<a href="/">首页</a>
+						|
+						<a href="/me">我的资料</a>
+						|
+						<a href="/signout">安全退出</a>
+					</div>
+					<div class="sidebar-menu">
+						<ul id="main-nav" class="nav nav-pills nav-stacked">
+							<!-- Accordion Menu -->
+							<li>
+								<a href="#me" class="nav-header collapsed nav-top-item" data-toggle="collapse">我的资料</a>
+								<ul class="nav nav-list collapse active" id="me">
+									<li >
+										<a href="myData.html" class="users_me users_modify ">我的资料</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#system" class="nav-header collapsed nav-top-item" data-toggle="collapse">系统管理</a>
+								<ul class="nav nav-list collapse" id="system">
+									<li>
+										<a href="usersManagement.html" class="users ">用户管理</a>
+									</li>
+									<li>
+										<a href="enterprisesManagement.html" class="enterprises">客户管理</a>
+									</li>
+									<li>
+										<a href="foreignEnterprisesManagement.html" class="foreiign_enterprises">外商管理</a>
+									</li>
+									<li>
+										<a href="dictionary.html" class="pages_dict dict">数据字典</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#contracts" class="nav-header collapsed nav-top-item" data-toggle="collapse">录入合同数据</a>
+								<ul class="nav nav-list collapse" id="contracts">
+									<li>
+										<a href="importContracts.html" class="contracts_import">导入合同</a>
+									</li>
+									<li>
+										<a href="newContracts.html" class="contracts_new contracts_create">新增合同</a>
+									</li>
+									<li>
+										<a href="contractsManagement.html" class="contracts contract">合同管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#storings" class="nav-header collapsed nav-top-item" data-toggle="collapse">仓储管理</a>
+								<ul class="nav nav-list collapse" id="storings">
+									<li>
+										<a href="importStorings.html" class="storings_import">导入仓储</a>
+									</li>
+									<li>
+										<a href="newStorings.html" class="storings_new storings_create">新增仓储</a>
+									</li>
+									<li>
+										<a href="storingsManagement.html" class="storings storing">仓储管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#declaration" class="nav-header collapsed nav-top-item" data-toggle="collapse">录入进出口数据</a>
+								<ul class="nav nav-list collapse" id="declaration">
+									<li>
+										<a href="/declarations/new?declaration_type=export" class="export_declarations_new export_declarations_create current ">新增出口报关单</a>
+									</li>
+									<li>
+										<a href="/declarations?declaration_type=export" class="export_declarations export_declaration">出口报关单管理</a>
+									</li>
+									<li>
+										<a href="/declarations/new?declaration_type=import" class="import_declarations_new import_declarations_create">新增进口报关单</a>
+									</li>
+									<li>
+										<a href="/declarations?declaration_type=import" class="import_declarations import_declaration">进口报关单管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#lists" class="nav-header collapsed nav-top-item" data-toggle="collapse">清单管理</a>
+								<ul class="nav nav-list collapse" id="lists">
+									<li>
+										<a href="/inner_total_list" class="inner_total_list">进区总清单录入</a>
+									</li>
+									<li>
+										<a href="/outer_total_list" class="outer_total_list">出区总清单录入</a>
+									</li>
+									<li>
+										<a href="/total_list" class="total_list">总清单列表</a>
+									</li>
+									<li>
+										<a href="/separate_list" class="separate_list">分清单列表</a>
+									</li>
+									<li>
+										<a href="/centralized_declaration" class="centralized_declaration">分批清单集中申报</a>
+									</li>
+									<li>
+										<a href="/declaration_list" class="declaration_list">集中申报清单列表</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#manifest" class="nav-header collapsed nav-top-item" data-toggle="collapse">载货单管理</a>
+								<ul class="nav nav-list collapse" id="manifest">
+									<li>
+										<a href="/manifest_bundle" class="manifest_bundle">载货单捆绑</a>
+									</li>
+									<li>
+										<a href="/manifest_query" class="manifest_query">载货单查询</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#query" class="nav-header collapsed nav-top-item" data-toggle="collapse">统计查询</a>
+								<ul class="nav nav-list collapse" id="query">
+									<li>
+										<a href="/warehouse" class="warehouse">仓库查询</a>
+									</li>
+									<li>
+										<a href="/qualification" class="qualification">资格查询</a>
+									</li>
+									<li>
+										<a href="/ic" class="ic">IC卡查询</a>
+									</li>
+									<li>
+										<a href="/cars" class="cars">车辆查询</a>
+									</li>
+									<li>
+										<a href="/books" class="books">账册查询</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#accounts" class="nav-header collapsed nav-top-item" data-toggle="collapse">账目管理</a>
+								<ul class="nav nav-list collapse" id="accounts">
+									<li>
+										<a href="/inventory" class="inventory">企业库存报核</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+				    	</div>
+				</div>
+			</div>
+			<div id="main-content">
+				<!-- Main Content Section with everything -->
+				<noscript>
+					<!-- Show a notification if the user has disabled javascript -->
+					<div class="notification error png_bg">
+						<div>
+							Javascript is disabled or is not supported by your browser. Please <a href="http://browsehappy.com/" title="Upgrade to a better browser">upgrade</a> your browser or <a href="http://www.google.com/support/bin/answer.py?answer=23852" title="Enable Javascript in your browser">enable</a> Javascript to navigate the interface properly.
+							Download From <a href="http://www.exet.tk">exet.tk</a>
+						</div>
+					</div>
+				</noscript>
+				<script>
+$(function() {
+	$("#current_enterprise_id").combobox();
+	$("#current_enterprise_id").select(function(){
+		$("#enterprise_selector_form").submit();
+	}); 
+});
+</script>
+<form accept-charset="UTF-8" action="/select_enterprise" id="enterprise_selector_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="L+cnWizu+dbcJiH66fZ3kYdbzKM0tmYcr8G8FVPFgLI=" /></div>
+<p>
+	<input name="url" type="hidden" value="http://113.105.181.29/declarations/new?declaration_type=export"/>
+	<label style="display: inline;" >当前生产销售单位：</label>
+	<select name="current_enterprise_id" id="current_enterprise_id" class="medium-input" >
+	  <option value="0">请选择单位</option>
+	  <option value="512" >4419969415东莞市泽盛物流有限公司</option>
+	  <option value="659" >4419940B43东友数码科技（东莞）有限公司</option>
+	  <option value="509"  selected="selected">4419940487东莞美时家具有限公司</option>
+	</select>
+</p>
+<div class="clear"></div><!-- End .clear -->
+</form><br />
+
+
+
+<div class="content-box">
+	<div class="content-box-header">
+		<h3>添加新出口报关单(东莞美时家具有限公司)</h3>
+		<div class="operations">
+			<a href="/declarations?declaration_type=export">返回列表</a>
+		</div>
+	</div>
+	<div class="content-box-content">
+		
+<form accept-charset="UTF-8" action="/declarations" class="new_declaration" id="new_declaration" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="L+cnWizu+dbcJiH66fZ3kYdbzKM0tmYcr8G8FVPFgLI=" /></div>
+    <fieldset style="width:1010px">
+    <legend>基本信息：</legend>
+    <input id="declaration_enterprise_id" name="declaration[enterprise_id]" type="hidden" value="509" />
+    <input id="declaration_declaration_type" name="declaration[declaration_type]" type="hidden" value="export" />
+    <div class="filed">
+      <label>手册编号</label>
+      <select class="text-input" id="contract_id_combobox" name="declaration[contract_id]" width="170px"><option value="0">请选择</option>
+<option value="70">C</option></select>
+    </div>
+
+    <div class="filed">
+      <label>收发货人</label>
+      <input class="text-input small-input first-field" data-minLength="2" data-url="/enterprises" id="operate_enterprise_code_autocomplete" name="declaration[operate_enterprise_code]" size="30" type="text" />
+<br />
+<small id="operate_enterprise_code_autocomplete_label">输入2个字符后有提示</small>
+    </div>
+
+    <div class="filed">
+      <label>申报日期</label>
+      <select id="declaration_declare_date_1i" name="declaration[declare_date(1i)]">
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option selected="selected" value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+</select>
+<select id="declaration_declare_date_2i" name="declaration[declare_date(2i)]">
+<option value="1">一月</option>
+<option value="2">二月</option>
+<option value="3">三月</option>
+<option value="4">四月</option>
+<option selected="selected" value="5">五月</option>
+<option value="6">六月</option>
+<option value="7">七月</option>
+<option value="8">八月</option>
+<option value="9">九月</option>
+<option value="10">十月</option>
+<option value="11">十一月</option>
+<option value="12">十二月</option>
+</select>
+<select id="declaration_declare_date_3i" name="declaration[declare_date(3i)]">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option selected="selected" value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+
+    </div>
+
+        <div class="filed">
+          <label></label>
+        </div>
+
+    <div class="filed">
+      <label>合同号</label>
+      <input class="text-input small-input" id="declaration_contract_no" name="declaration[contract_no]" size="30" type="text" />
+    </div>
+
+    <div class="filed">
+      <label>监管方式</label>
+      <input class="text-input small-input" data-minLength="2" data-url="/dict/trade_modes" id="trade_mode_autocomplete" name="declaration[trade_mode]" size="30" type="text" />
+<br />
+<small id="trade_mode_autocomplete_label">输入2个字符后有提示</small>
+    </div>
+
+    <div class="filed">
+      <label>征免性质</label>
+      <input class="text-input small-input" data-minLength="2" data-url="/dict/tax_kinds" id="tax_kind_autocomplete" name="declaration[tax_kind]" size="30" type="text" />
+<br />
+<small id="tax_kind_autocomplete_label">输入2个字符后有提示</small>
+    </div>
+
+    <div class="filed">
+      <label>境内货源地</label>
+      <input class="text-input small-input" data-minLength="2" data-url="/dict/districts" id="destination_autocomplete" name="declaration[destination]" size="30" type="text" value="44199" />
+<br />
+<small id="destination_autocomplete_label">输入2个字符后有提示</small>
+    </div>
+    
+    <div class="filed">
+      <label>件数</label>
+      <input class="text-input small-input" id="declaration_package_amount" name="declaration[package_amount]" size="30" type="text" />
+    </div>
+    
+    <div class="filed">
+      <label>总毛重</label>
+      <input class="text-input small-input" id="declaration_gross_weight" name="declaration[gross_weight]" size="30" type="text" />
+    </div>
+
+    <div class="filed">
+      <label>总净重</label>
+      <input class="text-input small-input" id="declaration_net_weight" name="declaration[net_weight]" size="30" type="text" />
+    </div>
+
+    <div class="filed">
+      <label>包装种类</label>
+      <input class="text-input small-input" data-minLength="1" data-url="/dict/wrap_types" id="wrap_type_autocomplete" name="declaration[wrap_type]" size="30" type="text" />
+<br />
+<small id="wrap_type_autocomplete_label">输入1个字符后有提示</small>
+    </div>
+
+
+    <div class="filed" >
+        <label>贸易国(地区):</label>
+        <input class="text-input small-input" data-minLength="2" data-url="/dict/countries" id="trade_area_autocomplete" name="declaration[trade_area]" size="30" type="text" />
+<br />
+<small id="trade_area_autocomplete_label">输入2个字符后有提示</small> 
+    </div>
+
+    <div class="filed">
+      <label>运抵国</label>
+      <input class="text-input small-input" data-minLength="2" data-url="/dict/countries" id="trade_country_autocomplete" name="declaration[trade_country]" size="30" type="text" />
+<br />
+<small id="trade_country_autocomplete_label">输入2个字符后有提示</small>
+    </div>
+
+    <div class="filed">
+      <label>指运港</label>
+      <input class="text-input small-input" data-minLength="2" data-url="/dict/ports" id="port_autocomplete" name="declaration[port]" size="30" type="text" />
+<br />
+<small id="port_autocomplete_label">输入2个字符后有提示</small>
+    </div>
+
+    <div class="filed">
+      <label>汽车编号</label>
+      <input class="text-input small-input" id="declaration_truck" name="declaration[truck]" size="30" type="text" />
+      <br/>
+      <small>输入6个字符后有提示</small>
+    </div>
+    <script>
+        $(function () {
+            $("#declaration_truck").autocomplete({
+                source: function (request, response) {
+                    var url = "/dict/trucks/search.json?term=" + request.term
+                    $.get(url, function (result) {
+                        response($.map(result, function (item) {
+                            item.label = item.code + item.name;
+                            item.value = item.code;
+                            return item;
+                        }));
+                    });
+                },
+                minLength: 6,
+                select: function (event, ui) {
+                    $("#declaration_bill_no").val(ui.item.name);
+                    $("#local_transport_tool_code_autocomplete").val(ui.item.code).blur();
+                    $("#declaration_declaration_transit_information_attributes_local_transport_tool_name").val(ui.item.name);
+
+                }
+            });
+        });
+    </script>
+
+    <div class="filed">
+      <label>运输方式</label>
+      <select class="text-input" id="transport_mode_combobox" name="declaration[transport_mode]"><option value=" ">请选择</option>
+<option value="0">0非保税区</option>
+<option value="1">1监管仓库</option>
+<option value="2">2水路运输</option>
+<option value="4">4公路运输</option>
+<option value="5">5航空运输</option>
+<option value="7">7保税区</option>
+<option value="9">9其它运输</option>
+<option value="W">W物流中心</option>
+<option value="X">X物流园区</option>
+<option value="Y">Y保税港区</option>
+<option value="Z">Z出口加工区</option></select> 
+
+    </div>
+    
+    <div class="filed">
+      <label>运输工具名称</label>
+      <input class="text-input small-input" id="declaration_transport_tool" name="declaration[transport_tool]" size="30" type="text" />
+    </div>
+
+   <div class="filed">
+      <label>航次</label>
+      <input class="text-input small-input" id="declaration_voyage_no" name="declaration[voyage_no]" onkeypress="" size="30" type="text" />
+    </div>
+
+    <div class="filed">
+      <label>提运单号</label>
+      <input class="text-input small-input" id="declaration_bill_no" name="declaration[bill_no]" size="30" type="text" />
+    </div>
+
+
+    <div class="filed">
+      <label>出口口岸</label>
+      <input class="text-input small-input" data-minLength="2" data-url="/dict/customs" id="custom_autocomplete" name="declaration[custom]" size="30" type="text" />
+<br />
+<small id="custom_autocomplete_label">输入2个字符后有提示</small>
+    </div>
+
+    <div class="filed">
+      <label>申报地海关</label>
+      <input class="text-input small-input" data-minLength="2" data-url="/dict/customs" id="custom_code_autocomplete" name="declaration[custom_code]" size="30" type="text" />
+<br />
+<small id="custom_code_autocomplete_label">输入2个字符后有提示</small> 
+     <br />
+    </div>
+
+    <div class="filed">
+      <label>装卸口岸</label>
+      <input class="text-input small-input" data-minLength="2" data-url="/dict/load_ports" id="load_port_autocomplete" name="declaration[load_port]" size="30" type="text" />
+<br />
+<small id="load_port_autocomplete_label">输入2个字符后有提示</small>
+    </div>
+
+    <div class="filed">
+      <label>随附单证</label>
+      <input class="text-input small-input" id="declaration_attachments_mark" name="declaration[attachments_mark]" size="30" type="text" />
+    </div>
+
+     <div class="filed">
+      <label>备注</label>
+      <input class="text-input small-input" id="declaration_memo" name="declaration[memo]" size="30" type="text" />
+    </div>
+
+     <div class="filed">
+      <label>申报单位</label>
+      <input class="text-input small-input" data-minLength="2" data-url="/enterprises" id="declare_enterprise_code_autocomplete" name="declaration[declare_enterprise_code]" size="30" type="text" value="4419980074" />
+<br />
+<small id="declare_enterprise_code_autocomplete_label">输入2个字符后有提示</small>
+    </div>
+
+    <div class="filed">
+      <label>报关人员</label>
+      <input class="text-input small-input" id="declaration_declarant" name="declaration[declarant]" size="30" type="text" />
+    </div>
+
+    <div class="filed">
+      <label>外商公司</label>
+      <input class="text-input small-input" data-minLength="2" data-url="/foreign_enterprises" id="foreign_enterprise_code_autocomplete" name="declaration[foreign_enterprise_code]" size="30" type="text" />
+<br />
+<small id="foreign_enterprise_code_autocomplete_label">输入2个字符后有提示</small>
+    </div>
+
+
+     <div class="filed">
+      <label>成交方式</label>
+      <input class="text-input small-input" data-minLength="1" data-url="/dict/deal_modes" id="deal_mode_autocomplete" name="declaration[deal_mode]" size="30" type="text" value="3" />
+<br />
+<small id="deal_mode_autocomplete_label">输入1个字符后有提示</small>
+    </div>
+  
+    <div class="filed">
+      <label>许可证号</label>          
+      <input class="text-input small-input" id="declaration_allow_no" name="declaration[allow_no]" size="30" type="text" />
+
+    </div>
+        
+    <div class="filed">
+      <label>保税/监管场所</label>
+      <input class="text-input small-input" id="declaration_warehouse_no" name="declaration[warehouse_no]" size="30" type="text" />
+    </div>
+
+
+    <div class="filed">
+      <label>电子口岸号</label>
+      <input class="text-input small-input" id="declaration_eport_no" name="declaration[eport_no]" size="30" type="text" />
+      <br/>
+      <small>报关成功后自动录入</small>
+    </div>
+  
+    <div class="filed">
+      <label>报关单号</label>
+      <input class="text-input small-input" id="declaration_entry_no" name="declaration[entry_no]" size="30" type="text" />
+      <br/>
+      <small>报关成功后自动录入</small>
+    </div>
+
+    
+    <div class="filed">
+      <label>预录入号</label>
+      <input class="text-input small-input" id="declaration_pre_entry_no" name="declaration[pre_entry_no]" readonly="readonly" size="30" type="text" value="201605132254190324" />
+      <br/>
+      <small>预录入号由系统自动生成</small>
+    </div>
+
+   <div class="filed">
+      <label>报关/转关类型</label>
+      <select class="text-input" id="transit_type_combobox" name="declaration[transit_type]"><option value=" ">请选择</option>
+<option value="001" selected="selected">001普通报关</option>
+<option value="002">002北方转关提前</option>
+<option value="003">003南方转关提前</option>
+<option value="004">004北方直转</option>
+<option value="005">005南方直转</option>
+<option value="006">006北方出口二次转关</option>
+<option value="007">007南方出口二次转关</option>
+<option value="008">008中转</option></select> 
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            if ($("#transit_type_combobox").val() != "003") {
+                $("#transit_filedset").hide();
+            }
+            $("#transit_type_combobox").change(function () {
+                if (this.value == "003") {
+                    $("#transit_filedset").show();
+                } else {
+                    $("#transit_filedset").hide();
+                }
+            });
+        });
+    </script>
+
+    <div class="filed">
+      <label>报关形式</label>
+      <select class="text-input " id="declare_mode_combobox" name="declaration[declare_mode]"><option value=" ">请选择</option>
+<option value="001">001普通报关单</option>
+<option value="002">002为带报关单清单的报关单</option>
+<option value="003" selected="selected">003通关无纸化</option>
+<option value="004">004既是清单又是无纸报关</option>
+<option value="M">M通关无纸化</option></select> 
+
+    </div>
+
+    
+   
+    <div class="filed">
+      <label>备案清单类型</label>
+      <select class="text-input " id="bill_type_combobox" name="declaration[bill_type]"><option value=" ">请选择</option>
+<option value="001">001普通备案清单</option>
+<option value="002">002先进区后报关</option>
+<option value="003">003分送集报备案清单</option>
+<option value="004">004分送集报报关单</option></select> 
+
+    </div>
+
+    <div class="filed">
+      <label>担保验放</label>
+      <select class="text-input " id="check_surety_combobox" name="declaration[check_surety]"><option value=" ">请选择</option>
+<option value="001">001是</option>
+<option value="002">002否</option></select> 
+
+    </div>
+   
+    
+    <script type="text/javascript">
+
+        $(function () {
+            var declaration_type = 'export' ;
+            $("#contract_id_combobox").change(function () {
+                $.get('/contracts/' + this.value + '.json', null, function (data, textStatus, xhr) {
+                    if (data) {
+                        $("#operate_enterprise_code_autocomplete").val(data.operate_enterprise_code).blur();
+                        $("#foreign_enterprise_code_autocomplete").val(data.foreign_enterprise_code).blur();
+                        $("#trade_mode_autocomplete").val(data.trade_mode).blur();
+                        $("#tax_kind_autocomplete").val(data.tax_kind).blur();
+                        if(data.trade_mode != '0110'){
+                            $("#declaration_contract_no").val(declaration_type == "import" ? data.import_contract : data.export_contract).blur();
+                        };
+                        $(this).focus();
+                    }
+                });
+            });
+            if ($("#is_special_relationship").is(":checked")) {
+                $("#is_price_influence").prop("disabled", false);
+                $("#is_price_influence_div").css("color", "black");
+            }
+            else {
+                $("#is_price_influence").prop("disabled", true);
+                $("#is_price_influence_div").css("color", "#aaa");
+            }
+            $("#is_special_relationship").click(function(){
+              if ($("#is_special_relationship").is(":checked")) {
+                $("#is_price_influence").prop("disabled", false);
+                $("#is_price_influence_div").css("color", "black");
+              }
+              else {
+                $("#is_price_influence").prop("disabled", true);
+                $("#is_price_influence_div").css("color", "#aaa");
+              }
+
+            })
+        });
+    </script>
+    
+        <!-- 
+        <div class="filed">
+          <label>结汇方式</label>
+          <input class="text-input small-input" data-minLength="1" data-url="/dict/pay_ways" id="pay_way_autocomplete" name="declaration[pay_way]" size="30" type="text" value="7" />
+<br />
+<small id="pay_way_autocomplete_label">输入1个字符后有提示</small>
+        </div>
+        -->
+    
+        <!-- 
+        <div class="filed">
+          <label>批准文号</label>
+          <input class="text-input small-input" id="declaration_license" name="declaration[license]" size="30" type="text" />
+        </div>
+        -->
+    
+    </fieldset>
+
+    <fieldset>
+    <legend>运、保、杂费</legend>
+      
+    <div class="filed">
+      <label>运费</label>
+      <input class="text-input small-input" id="declaration_transport_price" name="declaration[transport_price]" size="30" type="text" />
+
+    </div>
+
+    <div class="filed">
+      <label>运费标志</label>
+      <input class="text-input small-input" id="declaration_transport_price_flag" name="declaration[transport_price_flag]" size="30" type="text" />
+
+    </div>
+
+    <div class="filed">
+      <label>运费币制</label>
+      <input class="text-input small-input" data-minLength="2" data-url="/dict/currencies" id="transport_currency_autocomplete" name="declaration[transport_currency]" size="30" type="text" />
+<br />
+<small id="transport_currency_autocomplete_label">输入2个字符后有提示</small>
+    </div>
+
+
+    <div class="filed">
+      <label>保费</label>
+      <input class="text-input small-input" id="declaration_protect_price" name="declaration[protect_price]" size="30" type="text" />
+
+    </div>
+
+    <div class="filed">
+      <label>保费标志</label>
+      <input class="text-input small-input" id="declaration_protect_price_flag" name="declaration[protect_price_flag]" size="30" type="text" />
+
+    </div>
+
+    <div class="filed">
+      <label>保费币制</label>
+      <input class="text-input small-input" data-minLength="2" data-url="/dict/currencies" id="protect_currency_autocomplete" name="declaration[protect_currency]" size="30" type="text" />
+<br />
+<small id="protect_currency_autocomplete_label">输入2个字符后有提示</small>
+
+    </div>
+
+    <div class="filed">
+      <label>杂费</label>
+      <input class="text-input small-input" id="declaration_trivial_price" name="declaration[trivial_price]" size="30" type="text" />
+    </div>
+
+    <div class="filed">
+      <label>杂费标志</label>
+      <input class="text-input small-input" id="declaration_trivial_price_flag" name="declaration[trivial_price_flag]" size="30" type="text" />
+    </div>
+
+    <div class="filed">
+      <label>杂费币制</label>
+      <input class="text-input small-input" data-minLength="2" data-url="/dict/currencies" id="trivial_currency_autocomplete" name="declaration[trivial_currency]" size="30" type="text" />
+<br />
+<small id="trivial_currency_autocomplete_label">输入2个字符后有提示</small>
+
+    </div>
+
+    </fieldset>
+
+
+    <fieldset id="promise_items">
+      <legend>承诺事项：</legend>
+     <div class="filed">
+      <label>特殊关系确认</label>
+      <input name="declaration[is_special_relationship]" type="hidden" value="0" /><input class="text-input small-input" id="is_special_relationship" name="declaration[is_special_relationship]" type="checkbox" value="1" />
+    </div>
+     <div class="filed" id="is_price_influence_div">
+      <label>价格影响确认</label>
+      <input name="declaration[is_price_influence]" type="hidden" value="0" /><input class="text-input small-input" id="is_price_influence" name="declaration[is_price_influence]" type="checkbox" value="1" />
+    </div>
+     <div class="filed">
+      <label>支付特许权使用费确认</label>
+      <input name="declaration[is_pay_privilege]" type="hidden" value="0" /><input class="text-input small-input" id="declaration_is_pay_privilege" name="declaration[is_pay_privilege]" type="checkbox" value="1" />
+    </div>
+    </fieldset>
+
+
+    <fieldset id="transit_filedset">
+      <legend>转关信息：</legend>
+      
+          <div class="filed">
+            <label>转关单类型</label>
+            <select class="text-input" id="transit_declaration_type_combobox" name="declaration[declaration_transit_information_attributes][transit_declaration_type]"><option value=" ">请选择</option>
+<option value="001">001普通有纸申报</option>
+<option value="002">002无纸申报</option>
+<option value="M">M通关无纸化</option></select> 
+
+          </div>
+          <div class="filed">
+            <label>转关申报单位统一代码</label>
+            <input class="text-input small-input" data-minLength="2" data-url="/enterprises" id="transit_declaration_enterprise_autocomplete" name="declaration[declaration_transit_information_attributes][transit_declaration_enterprise]" size="30" type="text" />
+<br />
+<small id="transit_declaration_enterprise_autocomplete_label">输入2个字符后有提示</small>
+          </div>
+          <div class="filed">
+            <label>承运单位组织机构代码</label>
+            <input class="text-input small-input" id="declaration_declaration_transit_information_attributes_corporation_code" name="declaration[declaration_transit_information_attributes][corporation_code]" size="30" type="text" />
+          </div>
+          <div class="filed">
+            <label>承运单位名称</label>
+            <input class="text-input small-input" id="declaration_declaration_transit_information_attributes_corporation_name" name="declaration[declaration_transit_information_attributes][corporation_name]" size="30" type="text" />
+          </div>
+          <div class="filed">
+            <label>进出境运输工具编号</label>
+            <input class="text-input small-input" data-minLength="6" data-url="/dict/trucks" id="transport_tool_code_autocomplete" name="declaration[declaration_transit_information_attributes][transport_tool_code]" size="30" type="text" />
+<br />
+<small id="transport_tool_code_autocomplete_label">输入6个字符后有提示</small>
+          </div>
+          <div class="filed">
+            <label>进出境运输工具名称</label>
+            <input class="text-input small-input" id="declaration_declaration_transit_information_attributes_transport_tool_name" name="declaration[declaration_transit_information_attributes][transport_tool_name]" size="30" type="text" />
+          </div>
+          <div class="filed">
+            <label>进出境运输工具航次</label>
+            <input class="text-input small-input" id="declaration_declaration_transit_information_attributes_transport_tool_voyage_no" name="declaration[declaration_transit_information_attributes][transport_tool_voyage_no]" size="30" type="text" />
+          </div>
+          <div class="filed">
+            <label>进出境提运单号</label>
+            <input class="text-input small-input" id="declaration_declaration_transit_information_attributes_bill_no" name="declaration[declaration_transit_information_attributes][bill_no]" size="30" type="text" />
+          </div>
+          <div class="filed">
+            <label>境内运输方式</label>
+            <input class="text-input small-input" data-minLength="1" data-url="/dict/transport_modes" id="local_transport_mode_autocomplete" name="declaration[declaration_transit_information_attributes][local_transport_mode]" size="30" type="text" value="4" />
+<br />
+<small id="local_transport_mode_autocomplete_label">输入1个字符后有提示</small>
+          </div>
+          <div class="filed">
+            <label>境内运输工具编号</label>
+            <input class="text-input small-input" data-minLength="6" data-url="/dict/trucks" id="local_transport_tool_code_autocomplete" name="declaration[declaration_transit_information_attributes][local_transport_tool_code]" size="30" type="text" />
+<br />
+<small id="local_transport_tool_code_autocomplete_label">输入6个字符后有提示</small>
+          </div>
+          <div class="filed">
+            <label>境内运输工具名称</label>
+            <input class="text-input small-input" id="declaration_declaration_transit_information_attributes_local_transport_tool_name" name="declaration[declaration_transit_information_attributes][local_transport_tool_name]" size="30" type="text" />
+          </div>
+          <div class="filed">
+            <label>境内运输工具航次</label>
+            <input class="text-input small-input" id="declaration_declaration_transit_information_attributes_local_transport_tool_voyage_no" name="declaration[declaration_transit_information_attributes][local_transport_tool_voyage_no]" size="30" type="text" />
+          </div>
+    </fieldset>
+    <div>
+      <input class="button" name="commit" type="submit" value="新增报关单" />
+    </div>
+    <div class="clear"></div><!-- End .clear -->
+</form>
+	</div>
+</div>
+				<div id="footer">
+	<small>&#169; Copyright 2009 Xinze CO，LTD | Powered by <a href="mailto:liugf@vip.qq.com" target="_blank">Gavin Lau</a>, <a href="mailto:zhsenl@qq.com" target="_blank">Senlie Zheng</a> | <a href="#">Top</a> </small>
+</div>
+				<!-- End #footer -->
+
+			</div>
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function() {$("#system").collapse("show")});
+	</script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清溪物流保税中心</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<div id="body-wrapper">
+		<div id="top">
+			<a href="/"><img src="../images/logo2.png" height="60px" /></a>
+		</div>
+		<div id="body-content">
+			<div id="sidebar">
+				<div id="sidebar-wrapper">
+					<!-- Sidebar with logo and menu -->
+					<h1 id="sidebar-title">
+						<a href="#">清溪物流保税中心</a>
+					</h1>
+					<!-- Logo (221px wide) -->
+					<a href="/">
+						<!--<img alt="Xinze RRP logo" id="logo" src="../images/logo.png">-->
+					</a>
+					<!-- Sidebar Profile links -->
+					<div id="profile-links">
+						<!--	你好,
+						<a href="/me">user</a>
+						,
+						<span id="welcome_message">欢迎你</span>-->
+						<br>
+						<br>
+						<a href="/">首页</a>
+						|
+						<a href="/me">我的资料</a>
+						|
+						<a href="/signout">安全退出</a>
+					</div>
+					<div class="sidebar-menu">
+						<ul id="main-nav" class="nav nav-pills nav-stacked">
+							<!-- Accordion Menu -->
+							<li>
+								<a href="#me" class="nav-header collapsed nav-top-item" data-toggle="collapse">我的资料</a>
+								<ul class="nav nav-list collapse active" id="me">
+									<li >
+										<a href="myData.html" class="users_me users_modify ">我的资料</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#system" class="nav-header collapsed nav-top-item" data-toggle="collapse">系统管理</a>
+								<ul class="nav nav-list collapse" id="system">
+									<li>
+										<a href="usersManagement.html" class="users ">用户管理</a>
+									</li>
+									<li>
+										<a href="enterprisesManagement.html" class="enterprises current ">客户管理</a>
+									</li>
+									<li>
+										<a href="foreignEnterprisesManagement.html" class="foreiign_enterprises">外商管理</a>
+									</li>
+									<li>
+										<a href="dictionary.html" class="pages_dict dict">数据字典</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#contracts" class="nav-header collapsed nav-top-item" data-toggle="collapse">录入合同数据</a>
+								<ul class="nav nav-list collapse" id="contracts">
+									<li>
+										<a href="importContracts.html" class="contracts_import">导入合同</a>
+									</li>
+									<li>
+										<a href="newContracts.html" class="contracts_new contracts_create">新增合同</a>
+									</li>
+									<li>
+										<a href="contractsManagement.html" class="contracts contract">合同管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#storings" class="nav-header collapsed nav-top-item" data-toggle="collapse">仓储管理</a>
+								<ul class="nav nav-list collapse" id="storings">
+									<li>
+										<a href="importStorings.html" class="storings_import">导入仓储</a>
+									</li>
+									<li>
+										<a href="newStorings.html" class="storings_new storings_create">新增仓储</a>
+									</li>
+									<li>
+										<a href="storingsManagement.html" class="storings storing">仓储管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#declaration" class="nav-header collapsed nav-top-item" data-toggle="collapse">录入进出口数据</a>
+								<ul class="nav nav-list collapse" id="declaration">
+									<li>
+										<a href="/declarations/new?declaration_type=export" class="export_declarations_new export_declarations_create">新增出口报关单</a>
+									</li>
+									<li>
+										<a href="/declarations?declaration_type=export" class="export_declarations export_declaration">出口报关单管理</a>
+									</li>
+									<li>
+										<a href="/declarations/new?declaration_type=import" class="import_declarations_new import_declarations_create">新增进口报关单</a>
+									</li>
+									<li>
+										<a href="/declarations?declaration_type=import" class="import_declarations import_declaration">进口报关单管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#lists" class="nav-header collapsed nav-top-item" data-toggle="collapse">清单管理</a>
+								<ul class="nav nav-list collapse" id="lists">
+									<li>
+										<a href="/inner_total_list" class="inner_total_list">进区总清单录入</a>
+									</li>
+									<li>
+										<a href="/outer_total_list" class="outer_total_list">出区总清单录入</a>
+									</li>
+									<li>
+										<a href="/total_list" class="total_list">总清单列表</a>
+									</li>
+									<li>
+										<a href="/separate_list" class="separate_list">分清单列表</a>
+									</li>
+									<li>
+										<a href="/centralized_declaration" class="centralized_declaration">分批清单集中申报</a>
+									</li>
+									<li>
+										<a href="/declaration_list" class="declaration_list">集中申报清单列表</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#manifest" class="nav-header collapsed nav-top-item" data-toggle="collapse">载货单管理</a>
+								<ul class="nav nav-list collapse" id="manifest">
+									<li>
+										<a href="/manifest_bundle" class="manifest_bundle">载货单捆绑</a>
+									</li>
+									<li>
+										<a href="/manifest_query" class="manifest_query">载货单查询</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#query" class="nav-header collapsed nav-top-item" data-toggle="collapse">统计查询</a>
+								<ul class="nav nav-list collapse" id="query">
+									<li>
+										<a href="/warehouse" class="warehouse">仓库查询</a>
+									</li>
+									<li>
+										<a href="/qualification" class="qualification">资格查询</a>
+									</li>
+									<li>
+										<a href="/ic" class="ic">IC卡查询</a>
+									</li>
+									<li>
+										<a href="/cars" class="cars">车辆查询</a>
+									</li>
+									<li>
+										<a href="/books" class="books">账册查询</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#accounts" class="nav-header collapsed nav-top-item" data-toggle="collapse">账目管理</a>
+								<ul class="nav nav-list collapse" id="accounts">
+									<li>
+										<a href="/inventory" class="inventory">企业库存报核</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+				    	</div>
+				</div>
+			</div>
+			<div id="main-content">
+<!-- Main Content Section with everything -->
+				<noscript>
+					<!-- Show a notification if the user has disabled javascript -->
+					<div class="notification error png_bg">
+						<div>
+							Javascript is disabled or is not supported by your browser. Please <a href="http://browsehappy.com/" title="Upgrade to a better browser">upgrade</a> your browser or <a href="http://www.google.com/support/bin/answer.py?answer=23852" title="Enable Javascript in your browser">enable</a> Javascript to navigate the interface properly.
+							Download From <a href="http://www.exet.tk">exet.tk</a>
+						</div>
+					</div>
+				</noscript>
+				<div class="content-box">
+					<div class="content-box-header">
+						<h3>添加新企业</h3>
+						<div class="operations">
+							<a href="/enterprises">返回列表</a>
+						</div>
+					</div>
+					<div class="content-box-content">
+			
+						<form accept-charset="UTF-8" action="/enterprises" class="new_enterprise" id="new_enterprise" method="post">
+							<div style="margin:0;padding:0;display:inline">
+								<input name="utf8" type="hidden" value="&#x2713;" />
+								<input name="authenticity_token" type="hidden" value="n3fnGyNW9b/D5v4BAYproILP029He6+vvDYIfyzT1Pg=" />
+							</div>
+							<fieldset>
+								<legend>基本信息：</legend>
+								<div class="filed" >
+									<label>企业编码</label>
+									<input class="text-input small-input first-field" id="enterprise_code" name="enterprise[code]" size="30" type="text" autofocus/>
+								</div>
+								<div class="filed" >
+									<label>企业营业执照统一信用代码</label>
+									<input class="text-input small-input" id="enterprise_license_code" name="enterprise[license_code]" size="30" type="text" />
+								</div>								
+								<div class="filed"  >
+									<label>组织机构代码</label>
+									<input class="text-input small-input" id="enterprise_organization_code" name="enterprise[organization_code]" size="30" type="text" />
+								</div>
+								<div class="filed" >
+									<label>单位名称</label>
+									<input class="text-input small-input" id="enterprise_name" name="enterprise[name]" size="30" type="text" />
+								</div>
+								<div class="filed" >
+									<label>地址</label>
+									<input class="text-input small-input" id="enterprise_address" name="enterprise[address]" size="30" type="text" />
+								</div>
+								<div class="filed" >
+									<label>联系人</label>
+									<input class="text-input small-input" id="enterprise_linkman" name="enterprise[linkman]" size="30" type="text" />
+								</div>
+								<div class="filed" >
+									<label>电话</label>
+									<input class="text-input small-input" id="enterprise_telephone" name="enterprise[telephone]" size="30" type="tel" />
+								</div>
+								<div class="filed" >
+									<label>传真</label>
+									<input class="text-input small-input" id="enterprise_fax" name="enterprise[fax]" size="30" type="tel" />
+								</div>
+								<div class="filed" >
+									<label>开户银行</label>
+									<input class="text-input small-input" id="enterprise_bank" name="enterprise[bank]" size="30" type="text" />
+								</div>
+								<div class="filed" >
+									<label>银行账号</label>
+									<input class="text-input small-input" id="enterprise_bank_account" name="enterprise[bank_account]" size="30" type="text" />
+								</div>
+							</fieldset>
+							<fieldset>
+								<legend>报关信息：</legend>
+								
+								<div class="filed" >
+									<label>所属关区</label>
+									<input class="text-input small-input" data-minLength="2" data-url="/dict/customs" id="custom_code_autocomplete" name="enterprise[enterprise_custom_option_attributes][custom_code]" size="30" type="text" />
+									<br />
+									<small id="custom_code_autocomplete_label">输入2个字符后有提示</small>
+								</div>
+								<div class="filed" >
+									<label>集成通平台号</label>
+									<input class="text-input small-input" id="enterprise_enterprise_custom_option_attributes_platform_id" name="enterprise[enterprise_custom_option_attributes][platform_id]" size="30" type="text" />
+								</div>
+								<div class="filed" >
+									<label>区域节点名称</label>
+									<input class="text-input small-input" id="enterprise_enterprise_custom_option_attributes_area_name" name="enterprise[enterprise_custom_option_attributes][area_name]" size="30" type="text" />
+								</div>
+								<div class="filed" >
+									<label>平台用户私钥</label>
+									<input class="text-input small-input" id="enterprise_enterprise_custom_option_attributes_user_private_key" name="enterprise[enterprise_custom_option_attributes][user_private_key]" size="30" type="text" />
+								</div>
+								<div class="filed" >
+									<label>业务流程编码</label>
+									<input class="text-input small-input" id="enterprise_enterprise_custom_option_attributes_process_no" name="enterprise[enterprise_custom_option_attributes][process_no]" size="30" type="text" />
+								</div>
+								<div class="filed" >
+									<label>IC卡号</label>
+									<input class="text-input small-input" id="enterprise_enterprise_custom_option_attributes_ic_card_no" name="enterprise[enterprise_custom_option_attributes][ic_card_no]" size="30" type="text" />
+								</div>
+								<div class="filed" >
+									<label>IC卡用户证书号</label>
+									<input class="text-input small-input" id="enterprise_enterprise_custom_option_attributes_certificate_no" name="enterprise[enterprise_custom_option_attributes][certificate_no]" size="30" type="text" />
+								</div>
+								<div class="filed" >
+									<label>每单代理费</label>
+									<input class="text-input small-input" id="enterprise_enterprise_custom_option_attributes_proxy_unit_price" name="enterprise[enterprise_custom_option_attributes][proxy_unit_price]" size="30" type="text" />
+								</div>
+								<div class="filed" >
+									<label>每单服务费</label>
+									<input class="text-input small-input" id="enterprise_enterprise_custom_option_attributes_service_unit_price" name="enterprise[enterprise_custom_option_attributes][service_unit_price]" size="30" type="text" />
+								</div>
+							</fieldset>
+							<div>
+								<input class="button" name="commit" type="submit" value="新增企业" />
+							</div>
+							<div class="clear"></div><!-- End .clear -->
+						</form> 
+					</div>
+				</div>
+
+				<div id="footer">
+					<small>&#169; Copyright 2009 Xinze CO，LTD | Powered by <a href="mailto:liugf@vip.qq.com" target="_blank">Gavin Lau</a>, <a href="mailto:zhsenl@qq.com" target="_blank">Senlie Zheng</a> | <a href="#">Top</a> 
+					</small>
+				</div>
+				<!-- End #footer -->
+			</div>
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function() {$("#system").collapse("show")});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清溪物流保税中心</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+</head>
+<body>
+	<div id="body-wrapper">
+		<div id="top">
+			<a href="/"><img src="../images/logo2.png" height="60px"> </a>
+		</div>
+		<div id="body-content">
+			<div id="sidebar">
+				<div id="sidebar-wrapper">
+					<!-- Sidebar with logo and menu -->
+					<h1 id="sidebar-title">
+						<a href="#">清溪物流保税中心</a>
+					</h1>
+					<!-- Logo (221px wide) -->
+					<a href="/">
+						<!--<img alt="Xinze RRP logo" id="logo" src="../images/logo.png">-->
+					</a>
+					<!-- Sidebar Profile links -->
+					<div id="profile-links">
+						<!--	你好,
+						<a href="/me">user</a>
+						,
+						<span id="welcome_message">欢迎你</span>-->
+						<br>
+						<br>
+						<a href="/">首页</a>
+						|
+						<a href="/me">我的资料</a>
+						|
+						<a href="/signout">安全退出</a>
+					</div>
+					<div class="sidebar-menu">
+						<ul id="main-nav" class="nav nav-pills nav-stacked">
+							<!-- Accordion Menu -->
+							<li>
+								<a href="#me" class="nav-header collapsed nav-top-item" data-toggle="collapse">我的资料</a>
+								<ul class="nav nav-list collapse active" id="me">
+									<li >
+										<a href="myData.html" class="users_me users_modify ">我的资料</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#system" class="nav-header collapsed nav-top-item" data-toggle="collapse">系统管理</a>
+								<ul class="nav nav-list collapse" id="system">
+									<li>
+										<a href="usersManagement.html" class="users  ">用户管理</a>
+									</li>
+									<li>
+										<a href="enterprisesManagement.html" class="enterprises">客户管理</a>
+									</li>
+									<li>
+										<a href="foreignEnterprisesManagement.html" class="foreiign_enterprises">外商管理</a>
+									</li>
+									<li>
+										<a href="dictionary.html" class="pages_dict dict current">数据字典</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#contracts" class="nav-header collapsed nav-top-item" data-toggle="collapse">录入合同数据</a>
+								<ul class="nav nav-list collapse" id="contracts">
+									<li>
+										<a href="importContracts.html" class="contracts_import">导入合同</a>
+									</li>
+									<li>
+										<a href="newContracts.html" class="contracts_new contracts_create">新增合同</a>
+									</li>
+									<li>
+										<a href="contractsManagement.html" class="contracts contract">合同管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#storings" class="nav-header collapsed nav-top-item" data-toggle="collapse">仓储管理</a>
+								<ul class="nav nav-list collapse" id="storings">
+									<li>
+										<a href="importStorings.html" class="storings_import">导入仓储</a>
+									</li>
+									<li>
+										<a href="newStorings.html" class="storings_new storings_create">新增仓储</a>
+									</li>
+									<li>
+										<a href="storingsManagement.html" class="storings storing">仓储管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#declaration" class="nav-header collapsed nav-top-item" data-toggle="collapse">录入进出口数据</a>
+								<ul class="nav nav-list collapse" id="declaration">
+									<li>
+										<a href="/declarations/new?declaration_type=export" class="export_declarations_new export_declarations_create">新增出口报关单</a>
+									</li>
+									<li>
+										<a href="/declarations?declaration_type=export" class="export_declarations export_declaration">出口报关单管理</a>
+									</li>
+									<li>
+										<a href="/declarations/new?declaration_type=import" class="import_declarations_new import_declarations_create">新增进口报关单</a>
+									</li>
+									<li>
+										<a href="/declarations?declaration_type=import" class="import_declarations import_declaration">进口报关单管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#lists" class="nav-header collapsed nav-top-item" data-toggle="collapse">清单管理</a>
+								<ul class="nav nav-list collapse" id="lists">
+									<li>
+										<a href="/inner_total_list" class="inner_total_list">进区总清单录入</a>
+									</li>
+									<li>
+										<a href="/outer_total_list" class="outer_total_list">出区总清单录入</a>
+									</li>
+									<li>
+										<a href="/total_list" class="total_list">总清单列表</a>
+									</li>
+									<li>
+										<a href="/separate_list" class="separate_list">分清单列表</a>
+									</li>
+									<li>
+										<a href="/centralized_declaration" class="centralized_declaration">分批清单集中申报</a>
+									</li>
+									<li>
+										<a href="/declaration_list" class="declaration_list">集中申报清单列表</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#manifest" class="nav-header collapsed nav-top-item" data-toggle="collapse">载货单管理</a>
+								<ul class="nav nav-list collapse" id="manifest">
+									<li>
+										<a href="/manifest_bundle" class="manifest_bundle">载货单捆绑</a>
+									</li>
+									<li>
+										<a href="/manifest_query" class="manifest_query">载货单查询</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#query" class="nav-header collapsed nav-top-item" data-toggle="collapse">统计查询</a>
+								<ul class="nav nav-list collapse" id="query">
+									<li>
+										<a href="/warehouse" class="warehouse">仓库查询</a>
+									</li>
+									<li>
+										<a href="/qualification" class="qualification">资格查询</a>
+									</li>
+									<li>
+										<a href="/ic" class="ic">IC卡查询</a>
+									</li>
+									<li>
+										<a href="/cars" class="cars">车辆查询</a>
+									</li>
+									<li>
+										<a href="/books" class="books">账册查询</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#accounts" class="nav-header collapsed nav-top-item" data-toggle="collapse">账目管理</a>
+								<ul class="nav nav-list collapse" id="accounts">
+									<li>
+										<a href="/inventory" class="inventory">企业库存报核</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+				    	</div>
+				</div>
+			</div>
+			<div id="main-content">
+				<!-- Main Content Section with everything -->
+				<noscript>
+					<!-- Show a notification if the user has disabled javascript -->
+					<div class="notification error png_bg">
+						<div>
+							Javascript is disabled or is not supported by your browser. Please <a href="http://browsehappy.com/" title="Upgrade to a better browser">upgrade</a> your browser or <a href="http://www.google.com/support/bin/answer.py?answer=23852" title="Enable Javascript in your browser">enable</a> Javascript to navigate the interface properly.
+							Download From <a href="http://www.exet.tk">exet.tk</a>
+						</div>
+					</div>
+				</noscript>
+					<ul class="shortcut-buttons-set">
+						<li>
+							<a class="shortcut-button" href="/dict/attachments"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								随附单证表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/brackets"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								托架对照表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/bring_in_modes"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								引进方式表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/containers"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								集装箱表</span></a>
+						</li>	
+						<li>
+							<a class="shortcut-button" href="/dict/countries"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								国家地区表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/currencies"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								币制表 </span></a>
+						</li>	
+						<li>
+							<a class="shortcut-button" href="/dict/customs"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								海关代码表 </span></a>
+						</li>	
+						<li>
+							<a class="shortcut-button" href="/dict/deal_modes"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								成交方式表 </span></a>
+						</li>
+						
+						<li>
+							<a class="shortcut-button" href="/dict/districts"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								国内地区表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/goods"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								商品分类表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/investment_modes"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								投资方式表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/load_ports"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								装卸口岸表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/metal_cabinets"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								铁皮柜表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/pay_ways"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								结汇方式表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/ports"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								港口代码表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/process_types"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								加工种类表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/receipt_statuses"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								回执状态表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/tax_kinds"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								征免性质表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/tax_modes"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								征免方式表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/trade_modes"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								贸易方式表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/transport_modes"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								运输方式表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/trucks"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								承运单位表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/units"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								单位表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/usages"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								用途代码表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/wrap_types"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								包装种类表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/declare_modes"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								报关形式表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/transit_types"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								报关/转关类型表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/transit_declaration_types"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								转关申报类型表 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/bill_types"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								备案清单类型 </span></a>
+						</li>
+						<li>
+							<a class="shortcut-button" href="/dict/check_sureties"><span> <img alt="icon" src="../images/icons/db_48.png" />
+								<br />
+								担保验放 </span></a>
+						</li>
+					      <li>
+					        <a class="shortcut-button" href="/dict/fees"><span> <img alt="icon" src="../images/icons/db_48.png" />
+					          <br />
+								费用种类 </span></a>
+					      </li>
+						
+					</ul><!-- End .shortcut-buttons-set -->
+				<div class="clear"></div>
+				<div id="footer">
+					<small>&#169; Copyright 2009 Xinze CO，LTD | Powered by <a href="mailto:liugf@vip.qq.com" target="_blank">Gavin Lau</a>, <a href="mailto:zhsenl@qq.com" target="_blank">Senlie Zheng</a> | <a href="#">Top</a> </small>
+				</div>
+				<!-- End #footer -->
+	
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function() { $('#system').collapse('show')});
+	</script>
+</body>
+</html>

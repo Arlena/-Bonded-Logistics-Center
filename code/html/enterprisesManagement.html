@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清溪物流保税中心</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<div id="body-wrapper">
+		<div id="top">
+			<a href="/"><img src="../images/logo2.png" height="60px" /></a>
+		</div>
+		<div id="body-content">
+			<div id="sidebar">
+				<div id="sidebar-wrapper">
+					<!-- Sidebar with logo and menu -->
+					<h1 id="sidebar-title">
+						<a href="#">清溪物流保税中心</a>
+					</h1>
+					<!-- Logo (221px wide) -->
+					<a href="/">
+						<!--<img alt="Xinze RRP logo" id="logo" src="../images/logo.png">-->
+					</a>
+					<!-- Sidebar Profile links -->
+					<div id="profile-links">
+						<!--	你好,
+						<a href="/me">user</a>
+						,
+						<span id="welcome_message">欢迎你</span>-->
+						<br>
+						<br>
+						<a href="/">首页</a>
+						|
+						<a href="/me">我的资料</a>
+						|
+						<a href="/signout">安全退出</a>
+					</div>
+					<div class="sidebar-menu">
+						<ul id="main-nav" class="nav nav-pills nav-stacked">
+							<!-- Accordion Menu -->
+							<li>
+								<a href="#me" class="nav-header collapsed nav-top-item" data-toggle="collapse">我的资料</a>
+								<ul class="nav nav-list collapse active" id="me">
+									<li >
+										<a href="myData.html" class="users_me users_modify ">我的资料</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#system" class="nav-header collapsed nav-top-item" data-toggle="collapse">系统管理</a>
+								<ul class="nav nav-list collapse" id="system">
+									<li>
+										<a href="usersManagement.html" class="users ">用户管理</a>
+									</li>
+									<li>
+										<a href="enterprisesManagement.html" class="enterprises  current">客户管理</a>
+									</li>
+									<li>
+										<a href="foreignEnterprisesManagement.html" class="foreiign_enterprises">外商管理</a>
+									</li>
+									<li>
+										<a href="dictionary.html" class="pages_dict dict">数据字典</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#contracts" class="nav-header collapsed nav-top-item" data-toggle="collapse">录入合同数据</a>
+								<ul class="nav nav-list collapse" id="contracts">
+									<li>
+										<a href="importContracts.html" class="contracts_import">导入合同</a>
+									</li>
+									<li>
+										<a href="newContracts.html" class="contracts_new contracts_create">新增合同</a>
+									</li>
+									<li>
+										<a href="contractsManagement.html" class="contracts contract">合同管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#storings" class="nav-header collapsed nav-top-item" data-toggle="collapse">仓储管理</a>
+								<ul class="nav nav-list collapse" id="storings">
+									<li>
+										<a href="importStorings.html" class="storings_import">导入仓储</a>
+									</li>
+									<li>
+										<a href="newStorings.html" class="storings_new storings_create">新增仓储</a>
+									</li>
+									<li>
+										<a href="storingsManagement.html" class="storings storing">仓储管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#declaration" class="nav-header collapsed nav-top-item" data-toggle="collapse">录入进出口数据</a>
+								<ul class="nav nav-list collapse" id="declaration">
+									<li>
+										<a href="/declarations/new?declaration_type=export" class="export_declarations_new export_declarations_create">新增出口报关单</a>
+									</li>
+									<li>
+										<a href="/declarations?declaration_type=export" class="export_declarations export_declaration">出口报关单管理</a>
+									</li>
+									<li>
+										<a href="/declarations/new?declaration_type=import" class="import_declarations_new import_declarations_create">新增进口报关单</a>
+									</li>
+									<li>
+										<a href="/declarations?declaration_type=import" class="import_declarations import_declaration">进口报关单管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#lists" class="nav-header collapsed nav-top-item" data-toggle="collapse">清单管理</a>
+								<ul class="nav nav-list collapse" id="lists">
+									<li>
+										<a href="/inner_total_list" class="inner_total_list">进区总清单录入</a>
+									</li>
+									<li>
+										<a href="/outer_total_list" class="outer_total_list">出区总清单录入</a>
+									</li>
+									<li>
+										<a href="/total_list" class="total_list">总清单列表</a>
+									</li>
+									<li>
+										<a href="/separate_list" class="separate_list">分清单列表</a>
+									</li>
+									<li>
+										<a href="/centralized_declaration" class="centralized_declaration">分批清单集中申报</a>
+									</li>
+									<li>
+										<a href="/declaration_list" class="declaration_list">集中申报清单列表</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#manifest" class="nav-header collapsed nav-top-item" data-toggle="collapse">载货单管理</a>
+								<ul class="nav nav-list collapse" id="manifest">
+									<li>
+										<a href="/manifest_bundle" class="manifest_bundle">载货单捆绑</a>
+									</li>
+									<li>
+										<a href="/manifest_query" class="manifest_query">载货单查询</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#query" class="nav-header collapsed nav-top-item" data-toggle="collapse">统计查询</a>
+								<ul class="nav nav-list collapse" id="query">
+									<li>
+										<a href="/warehouse" class="warehouse">仓库查询</a>
+									</li>
+									<li>
+										<a href="/qualification" class="qualification">资格查询</a>
+									</li>
+									<li>
+										<a href="/ic" class="ic">IC卡查询</a>
+									</li>
+									<li>
+										<a href="/cars" class="cars">车辆查询</a>
+									</li>
+									<li>
+										<a href="/books" class="books">账册查询</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#accounts" class="nav-header collapsed nav-top-item" data-toggle="collapse">账目管理</a>
+								<ul class="nav nav-list collapse" id="accounts">
+									<li>
+										<a href="/inventory" class="inventory">企业库存报核</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+				    	</div>
+				</div>
+			</div>
+			<div id="main-content">
+				<!-- Main Content Section with everything -->
+				<noscript>
+					<!-- Show a notification if the user has disabled javascript -->
+					<div class="notification error png_bg">
+						<div>
+							Javascript is disabled or is not supported by your browser. Please <a href="http://browsehappy.com/" title="Upgrade to a better browser">upgrade</a> your browser or <a href="http://www.google.com/support/bin/answer.py?answer=23852" title="Enable Javascript in your browser">enable</a> Javascript to navigate the interface properly.
+							Download From <a href="http://www.exet.tk">exet.tk</a>
+						</div>
+					</div>
+				</noscript>
+				<form accept-charset="UTF-8" action="/enterprises/search" method="get">
+					<div style="margin:0;padding:0;display:inline">
+						<input name="utf8" type="hidden" value="&#x2713;" />
+					</div>
+					<p>
+						<label style="display: inline;" >搜索：</label>
+						<input name="term" class="text-input medium-input" />
+						&nbsp;&nbsp;
+						<input class="button" type="submit" value="搜索企业" name="commit">
+					</p>
+					<div class="clear"></div><!-- End .clear -->
+				</form>
+
+				<br />
+
+
+				<div class="content-box">
+					<div class="content-box-header">
+						<h3>企业列表</h3>
+						<div class="operations">
+							<a href="/enterprises/new">添加新企业</a>
+						</div>
+					</div>
+					<div class="content-box-content">
+						<div class="tab-content default-tab">
+							<table>
+								<thead>
+									<tr>
+										<th>企业编码</th>
+										<th>企业营业执照统一信用代码</th>
+										<th>单位名称</th>
+										<th>联系人</th>
+										<th>联系电话</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<td colspan="6"> 
+											<div class="pagination">
+												<span class="previous_page disabled">上一页</span> 
+												<em class="current">1</em> 
+												<a rel="next" href="/enterprises?page=2">2</a> 
+												<a href="/enterprises?page=3">3</a> 
+												<a href="/enterprises?page=4">4</a> 
+												<a href="/enterprises?page=5">5</a> 
+												<a href="/enterprises?page=6">6</a> 
+												<a href="/enterprises?page=7">7</a> 
+												<a href="/enterprises?page=8">8</a> 
+												<a href="/enterprises?page=9">9</a> 
+												<span class="gap">…</span> 
+												<a href="/enterprises?page=16">16</a> 
+												<a href="/enterprises?page=17">17</a> 
+												<a class="next_page" rel="next" href="/enterprises?page=2">下一页</a>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+								<tbody>
+									<tr>
+										<td><a href="/enterprises/997">4419969459</a></td>
+										<td><a href="/enterprises/997">201605110000000001</a></td>
+									    <td><a href="/enterprises/997">广东宾豪旅行用品有限公司</a></td>
+									    <td>AlexAlender</td>
+									    <td>123456789</td>
+									    <td> <a href="/enterprises/997/edit"><img alt="编辑" src="../images/icons/pencil.png" title="编辑" /></a>
+									    	<a href="/enterprises/997" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="../images/icons/cross.png" title="删除" /></a></td>
+									</tr>
+								<!-- 	<tr>
+										<td><a href="/enterprises/996">4469947383</a></td>
+									    <td><a href="/enterprises/996">东莞石龙正丰塑胶五金有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/996/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/996" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/995">4403944113</a></td>
+									    <td><a href="/enterprises/995">郎盈塑胶五金制品（深圳）有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/995/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/995" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/994">4469967901</a></td>
+									    <td><a href="/enterprises/994">东莞市灏腾电器有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/994/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/994" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/993">4420950009</a></td>
+									    <td><a href="/enterprises/993">中山市对外加工装配服务公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/993/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/993" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/970">3118930884</a></td>
+									    <td><a href="/enterprises/970">富通集团（上海）电线有限公司</a></td>
+									    <td></td>
+									    <td>(86)21-5774-2000</td>
+									    <td> <a href="/enterprises/970/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/970" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/992">4509948339</a></td>
+									    <td><a href="/enterprises/992">广西兴莱鞋业有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/992/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/992" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/991">5002940718</a></td>
+									    <td><a href="/enterprises/991">凯高玩具（重庆）有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/991/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/991" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/990">3225961946</a></td>
+									    <td><a href="/enterprises/990">苏州甲骨文纺织科技有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/990/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/990" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/989">4419940953</a></td>
+									    <td><a href="/enterprises/989">东莞兴发玩具厂有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/989/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/989" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/988">4416940241</a></td>
+									    <td><a href="/enterprises/988">河源联弘玩具礼品有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/988/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/988" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/987">3301961E83</a></td>
+									    <td><a href="/enterprises/987">淅江一达通企业服务有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/987/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/987" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/986">4419942182</a></td>
+									    <td><a href="/enterprises/986">联志玩具礼品(东莞)有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/986/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/986" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/500">4419980074</a></td>
+									    <td><a href="/enterprises/500">东莞市新泽报关咨询服务有限公司</a></td>
+									    <td>陈柱勤</td>
+									    <td>22827332</td>
+									    <td> <a href="/enterprises/500/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/500" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/509">4419940487</a></td>
+									    <td><a href="/enterprises/509">东莞美时家具有限公司</a></td>
+									    <td>郭超文</td>
+									    <td>82031185</td>
+									    <td> <a href="/enterprises/509/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/509" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/499">4419960285</a></td>
+									    <td><a href="/enterprises/499">东莞市新泽进出口有限公司</a></td>
+									    <td>陈生</td>
+									    <td>22827832</td>
+									    <td> <a href="/enterprises/499/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/499" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/985">4403960022</a></td>
+									    <td><a href="/enterprises/985">深圳市裕同包装科技股份有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/985/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/985" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/984">440304638P</a></td>
+									    <td><a href="/enterprises/984">东莞市百昌贸易有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/984/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/984" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/983">4419937501</a></td>
+									    <td><a href="/enterprises/983">正隆（广东）纸业有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/983/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/983" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/982">4469940138</a></td>
+									    <td><a href="/enterprises/982">东莞鸿富电子科技有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/982/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/982" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/981">4419943500</a></td>
+									    <td><a href="/enterprises/981">东莞鸿端电子科技有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/981/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/981" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/980">4419965069</a></td>
+									    <td><a href="/enterprises/980">东莞市汇润进出口有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/980/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/980" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/979">4420941816</a></td>
+									    <td><a href="/enterprises/979">威霖（中山）有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/979/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/979" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/978">4419967613</a></td>
+									    <td><a href="/enterprises/978">固邦（东莞）电器有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/978/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/978" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/977">3207962258</a></td>
+									    <td><a href="/enterprises/977">连云港韵至电子有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/977/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/977" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/976">4419946961</a></td>
+									    <td><a href="/enterprises/976">碧辉电子（东莞）有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/976/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/976" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/975">4419960Q5V</a></td>
+									    <td><a href="/enterprises/975">东莞市飞扬灯饰科技有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/975/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/975" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/974">4419947968</a></td>
+									    <td><a href="/enterprises/974">东莞德州鞋业有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/974/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/974" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/973">441996011A</a></td>
+									    <td><a href="/enterprises/973">广东汇富控股集团股份有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/973/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/973" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="/enterprises/972">4419942889</a></td>
+									    <td><a href="/enterprises/972">东莞爱电电子有限公司</a></td>
+									    <td></td>
+									    <td></td>
+									    <td> <a href="/enterprises/972/edit"><img alt="编辑" src="/assets/icons/pencil-9c974c32137ac4342ee02585bd85a4b9.png" title="编辑" /></a>
+									    	<a href="/enterprises/972" data-confirm="确定删除?" data-method="delete" rel="nofollow"><img alt="删除" src="/assets/icons/cross-4b130463e1aacdcb07a0248c299edea0.png" title="删除" /></a></td>
+									</tr> -->
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div id="footer">
+					<small>&#169; Copyright 2009 Xinze CO，LTD | Powered by <a href="mailto:liugf@vip.qq.com" target="_blank">Gavin Lau</a>, <a href="mailto:zhsenl@qq.com" target="_blank">Senlie Zheng</a> | <a href="#">Top</a> </small>
+				</div>
+				<!-- End #footer -->
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	  	$(function() {$("#system").collapse('show')});
+	</script>
+</body>
+</html>

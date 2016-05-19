@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>清溪物流保税中心</title>
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+
+</head>
+<body>
+	<div id="body-wrapper">
+		<div id="top">
+			<a href="/"><img src="../images/logo2.png" height="60px"> </a>
+		</div>
+		<div id="body-content">
+			<div id="sidebar" style="float:left">
+				<div id="sidebar-wrapper">
+					<!-- Sidebar with logo and menu -->
+					<h1 id="sidebar-title">
+						<a href="#">清溪物流保税中心</a>
+					</h1>
+					<!-- Logo (221px wide) -->
+					<a href="/">
+						<!--<img alt="Xinze RRP logo" id="logo" src="../images/logo.png">-->
+					</a>
+					<!-- Sidebar Profile links -->
+					<div id="profile-links">
+						<!--	你好,
+						<a href="/me">user</a>
+						,
+						<span id="welcome_message">欢迎你</span>-->
+						<br>
+						<br>
+						<a href="/">首页</a>
+						|
+						<a href="/me">我的资料</a>
+						|
+						<a href="/signout">安全退出</a>
+					</div>
+					<div class="sidebar-menu">
+						<ul id="main-nav" class="nav nav-pills nav-stacked">
+							<!-- Accordion Menu -->
+							<li>
+								<a href="#me" class="nav-header collapsed nav-top-item" data-toggle="collapse">我的资料</a>
+								<ul class="nav nav-list collapse" id="me">
+									<li>
+										<a href="myData.html" class="users_me users_modify ">我的资料</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#system" class="nav-header collapsed nav-top-item" data-toggle="collapse">系统管理</a>
+								<ul class="nav nav-list collapse" id="system">
+									<li>
+										<a href="usersManagement.html" class="users  ">用户管理</a>
+									</li>
+									<li>
+										<a href="enterprisesManagement.html" class="enterprises">客户管理</a>
+									</li>
+									<li>
+										<a href="foreignEnterprisesManagement.html" class="foreiign_enterprises">外商管理</a>
+									</li>
+									<li>
+										<a href="dictionary.html" class="pages_dict dict">数据字典</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#contracts" class="nav-header collapsed nav-top-item" data-toggle="collapse">录入合同数据</a>
+								<ul class="nav nav-list collapse" id="contracts">
+									<li>
+										<a href="importContracts.html" class="contracts_import">导入合同</a>
+									</li>
+									<li>
+										<a href="newContracts.html" class="contracts_new contracts_create">新增合同</a>
+									</li>
+									<li>
+										<a href="contractsManagement.html" class="contracts contract">合同管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#storings" class="nav-header collapsed nav-top-item" data-toggle="collapse">仓储管理</a>
+								<ul class="nav nav-list collapse" id="storings">
+									<li>
+										<a href="importStorings.html" class="storings_import">导入仓储</a>
+									</li>
+									<li>
+										<a href="newStorings.html" class="storings_new storings_create">新增仓储</a>
+									</li>
+									<li>
+										<a href="storingsManagement.html" class="storings storing">仓储管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#declaration" class="nav-header collapsed nav-top-item" data-toggle="collapse">录入进出口数据</a>
+								<ul class="nav nav-list collapse" id="declaration">
+									<li>
+										<a href="/declarations/new?declaration_type=export" class="export_declarations_new export_declarations_create">新增出口报关单</a>
+									</li>
+									<li>
+										<a href="/declarations?declaration_type=export" class="export_declarations export_declaration">出口报关单管理</a>
+									</li>
+									<li>
+										<a href="/declarations/new?declaration_type=import" class="import_declarations_new import_declarations_create">新增进口报关单</a>
+									</li>
+									<li>
+										<a href="/declarations?declaration_type=import" class="import_declarations import_declaration">进口报关单管理</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#lists" class="nav-header collapsed nav-top-item" data-toggle="collapse">清单管理</a>
+								<ul class="nav nav-list collapse" id="lists">
+									<li>
+										<a href="/inner_total_list" class="inner_total_list">进区总清单录入</a>
+									</li>
+									<li>
+										<a href="/outer_total_list" class="outer_total_list">出区总清单录入</a>
+									</li>
+									<li>
+										<a href="/total_list" class="total_list">总清单列表</a>
+									</li>
+									<li>
+										<a href="/separate_list" class="separate_list">分清单列表</a>
+									</li>
+									<li>
+										<a href="/centralized_declaration" class="centralized_declaration">分批清单集中申报</a>
+									</li>
+									<li>
+										<a href="/declaration_list" class="declaration_list">集中申报清单列表</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#manifest" class="nav-header collapsed nav-top-item" data-toggle="collapse">载货单管理</a>
+								<ul class="nav nav-list collapse" id="manifest">
+									<li>
+										<a href="/manifest_bundle" class="manifest_bundle">载货单捆绑</a>
+									</li>
+									<li>
+										<a href="/manifest_query" class="manifest_query">载货单查询</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#query" class="nav-header collapsed nav-top-item" data-toggle="collapse">统计查询</a>
+								<ul class="nav nav-list collapse" id="query">
+									<li>
+										<a href="/warehouse" class="warehouse">仓库查询</a>
+									</li>
+									<li>
+										<a href="/qualification" class="qualification">资格查询</a>
+									</li>
+									<li>
+										<a href="/ic" class="ic">IC卡查询</a>
+									</li>
+									<li>
+										<a href="/cars" class="cars">车辆查询</a>
+									</li>
+									<li>
+										<a href="/books" class="books">账册查询</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#accounts" class="nav-header collapsed nav-top-item" data-toggle="collapse">账目管理</a>
+								<ul class="nav nav-list collapse" id="accounts">
+									<li>
+										<a href="/inventory" class="inventory">企业库存报核</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+				    </div>
+				</div>
+			</div>
+			<!-- End #sidebar -->
+
+
+			<div id="main-content">
+				<h2>Welcome, user</h2>
+				<p id="page-intro">
+				What would you like to do?
+				</p>
+				<ul class="shortcut-buttons-set">
+					<li>
+						<a class="shortcut-button" href="/declarations/new?declaration_type=export"><span> <img alt="icon" src="../images/icons/pencil_48.png" />
+							<br />
+							新增出口报关单 </span></a>
+					</li>
+					<li>
+						<a class="shortcut-button" href="/declarations/new?declaration_type=import"><span> <img alt="icon" src="../images/icons/pencil_48.png" />
+							<br />
+							新增入口报关单 </span></a>
+					</li>
+					<li>
+						<a class="shortcut-button" href="/contracts/new"><span> <img alt="icon" src="../images/icons/paper_content_pencil_48.png" />
+							<br />
+							新增合同 </span></a>
+					</li>
+					<li>
+						<a class="shortcut-button" href="/me"><span> <img alt="icon" src="../images/icons/comment_48.png" />
+							<br />
+							我的资料 </span></a>
+					</li>
+				</ul><!-- End .shortcut-buttons-set -->
+				<div class="clear"></div>
+				<div id="footer">
+					<small>&#169; Copyright 2009 Xinze CO，LTD | Powered by <a href="mailto:liugf@vip.qq.com" target="_blank">Gavin Lau</a>, <a href="mailto:zhsenl@qq.com" target="_blank">Senlie Zheng</a> | <a href="#">Top</a> </small>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script src="../js/jquery-1.10.2.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
